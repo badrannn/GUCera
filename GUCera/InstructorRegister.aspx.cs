@@ -39,8 +39,24 @@ namespace GUCera
 
                 conn.Open();
                 register.ExecuteNonQuery();
+            SqlCommand cmd = new SqlCommand
+            {
+                CommandText = "select * from [Users]",
+                Connection = conn
+            };
+            SqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                if (rd[5].ToString().Equals(email.Text))
+                {
+                    Session["user"] = rd[0];
+                    break;
+                }
+            }
+           
                 conn.Close();
                 Response.Redirect("InstructorHome.aspx");
+               
                 
                 
             }

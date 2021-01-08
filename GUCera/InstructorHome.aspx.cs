@@ -11,12 +11,12 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void addcourse_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("AddCourse.aspx");
         }
 
         protected void viewass_Click(object sender, EventArgs e)

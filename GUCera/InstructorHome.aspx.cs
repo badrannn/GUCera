@@ -21,27 +21,28 @@ namespace GUCera
 
         protected void viewass_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("ViewAss.aspx");
         }
 
         protected void define_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("DefineAss.aspx");
         }
 
         protected void gradeass_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("GradeAss.aspx");
         }
 
         protected void viewfeed_Click(object sender, EventArgs e)
         {
+            Response.Redirect("ViewFeed.aspx");
 
         }
 
         protected void issuecert_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("IssueCert.aspx");
         }
     }
 }

@@ -21,7 +21,7 @@ namespace GUCera
         {
             string connStr = ConfigurationManager.ConnectionStrings["GUCera"].ToString();
             SqlConnection conn = new SqlConnection(connStr);
-            SqlCommand Addnoproc = new SqlCommand("viewAssignGrades", conn);
+            SqlCommand Addnoproc = new SqlCommand("addMobile", conn);
             Addnoproc.CommandType = CommandType.StoredProcedure;
 
             int no = Int16.Parse(number.Text);

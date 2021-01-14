@@ -11,24 +11,31 @@ namespace GUCera
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         protected void Button2_Click(object sender, EventArgs e)
         {
+            Response.Redirect("ViewMyProfile.aspx");
 
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
+            Response.Redirect("ListOfCourses.aspx");
 
         }
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EnrollinCourse.aspx");
+        }
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AddCreditCard.aspx");
 
+        }
         protected void Button8_Click(object sender, EventArgs e)
         {
             Response.Redirect("StudentSubmitAssign.aspx");
@@ -59,19 +66,11 @@ namespace GUCera
             Response.Redirect("ViewAssignmentsContent.aspx");
         }
 
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void Button6_Click(object sender, EventArgs e)
         {
+            Response.Redirect("ViewPromoCode.aspx");
 
         }
     }
+
 }

@@ -23,7 +23,7 @@ namespace GUCera
             SqlConnection conn = new SqlConnection(connStr);
 
             int courseid = Int16.Parse(CourseIdforAssContent.Text);
-            string sid = (String)Session["user"];
+            int sid = (int)Session["user"];
 
             SqlCommand ViewAssignproc = new SqlCommand("ViewAssign", conn);
             ViewAssignproc.CommandType = CommandType.StoredProcedure;

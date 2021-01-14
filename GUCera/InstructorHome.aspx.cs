@@ -44,5 +44,10 @@ namespace GUCera
         {
             Response.Redirect("IssueCert.aspx");
         }
+
+        protected void Addno(object sender, EventArgs e)
+        {
+            Response.Redirect("InstructorAddno.aspx");
+        }
     }
 }

@@ -42,6 +42,14 @@
     
         </p>
         <p>
+        <asp:Label ID="Label6" runat="server" Font-Names="Courier New" Text="Add Number" Font-Size="Large"></asp:Label>
+    
+        </p>
+        <p>
+            <asp:Button ID="issuecert0" runat="server" Text="Add" Height="50 px" Width="100px"  style="margin:auto" Font-Bold="True" Font-Names="Courier New" OnClick="Addno" />
+    
+        </p>
+        <p>
             &nbsp;</p>
         </form>
             

@@ -71,7 +71,7 @@ namespace GUCera
             {
                 Session["user"] = id;
                 if (inst == false)
-                    Response.Redirect("courses.aspx");
+                    Response.Redirect("StudentHome.aspx");
                 else
                     Response.Redirect("InstructorHome.aspx");
             }
